@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /HelaCraft/public/
+
+# Allow access to existing files and directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Route all other URLs to index.php and pass them as a query string
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]

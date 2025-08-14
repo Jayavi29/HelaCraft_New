@@ -1,0 +1,80 @@
+/*
+=================================
+    Main Header Styles
+=================================
+*/
+
+/* Basic setup for the header bar */
+.main-header {
+    background-color: #ffffff;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e9ecef; /* A soft line at the bottom */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* A subtle shadow for a lifting effect */
+    width: 100%; /* Ensure full width */
+    
+    /* Makes the header stick to the top on scroll */
+    position: fixed; /* Changed from sticky to fixed for better control */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* The container centers the content and manages its width */
+.main-header .container {
+    width: 100%; /* Full width of the parent */
+    max-width: 1200px; /* Maximum width for large screens */
+    margin: 0 auto; /* Centers the container */
+    padding: 0 1rem; /* Adds horizontal padding */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+/* Style for the 'HelaCrafts' logo */
+.main-header .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2c3e50; /* A dark, professional blue-black */
+    text-decoration: none;
+}
+
+/* Style for the main navigation link container */
+.main-header .main-nav {
+    display: flex;
+    gap: 2rem; /* The space between each navigation link */
+}
+
+/* Individual navigation links (Home, Shop, etc.) */
+.main-header .main-nav a {
+    text-decoration: none;
+    color: #34495e; /* A softer dark color for the text */
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent; /* Prepare for a nice hover effect */
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+/* The hover effect for main navigation links */
+.main-header .main-nav a:hover {
+    color: #3498db; /* A bright blue on hover */
+    border-bottom-color: #3498db; /* The underline appears on hover */
+}
+
+/* Style for the right-side user navigation (Login) */
+.main-header .user-nav a {
+    text-decoration: none;
+    background-color: #3498db;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* The hover effect for the Login button */
+.main-header .user-nav a:hover {
+    background-color: #2980b9; /* A darker blue on hover */
+    transform: translateY(-2px); /* Lifts the button slightly */
+}

@@ -1,0 +1,48 @@
+/*
+=================================
+    Card Component (Your New Styles)
+=================================
+*/
+
+.card {
+  background-color: #ffffff; /* Replaced CSS variable for simplicity */
+  color: #1c2e40; /* Replaced CSS variable */
+  border: 1px solid #e9ecef; /* Replaced CSS variable */
+  border-radius: 12px; /* Replaced CSS variable */
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease;
+  max-width: 100%;
+}
+.card:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0; /* Adjusted margin for our layout */
+}
+
+.card-subtitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.card-description {
+  font-size: 0.875rem;
+  color: #000000; /* Replaced CSS variable */
+  margin-bottom: 0.5rem; /* Adjusted margin */
+}
+
+.card-content {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+
+.card-footer {
+  margin-top: 1rem;
+}
